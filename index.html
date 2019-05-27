@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>News Finder</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<center><h1>
+					NF <small>News Finder</small>
+				</h1></center>
+
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						 
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin-right: 16px;">
+							<span class="navbar-toggler-icon"></span>
+						</button> <a class="navbar-brand" href="#"></a>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="navbar-nav">
+								<li class="nav-item active">
+									 <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									 <a class="nav-link" href="#contact">Contact</a>
+								</li>
+								
+							</ul>
+							<form class="form-inline">
+								<input class="form-control mr-sm-2" type="text"> 
+								<button class="btn btn-primary my-2 my-sm-0" type="submit">
+									Search
+								</button>
+							</form>
+							
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-6">
+				</div>
+			</div>
+			<div class="carousel slide" id="carousel-100353">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-100353">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-100353">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-100353" class="active">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap First" src="https://static-news.moneycontrol.com/static-mcnews/2019/02/prashant-kishor-uddhav-thackeray-770x433.jpg">
+						<div class="carousel-caption">
+							<h4>	
+							Lok Sabha election 2019 | What the result means for BJP's allies
+							</h4>
+							<p>
+								A massive majority in favour of the BJP has meant that its allies have little room for political maneuvering in times to come<button><a href="https://www.moneycontrol.com/news/politics/lok-sabha-election-2019-what-the-result-means-for-bjps-allies-4026251.html">...</a></button>
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://images.firstpost.com/wp-content/uploads/2019/05/surat-fire_pti.jpg">
+						<div class="carousel-caption">
+							<h4>
+								Surat fire tragedy: Two more arrested by Gujarat Police
+							</h4>
+							<p>
+								Surat: Two more accused have been arrested by Gujarat Police in connection with the Surat fire tragedy which claimed the lives of 20 people, mostly students. 
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item active">
+						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="https://timesofindia.indiatimes.com/thumb/msid-69026123,imgsize-65600,width-400,resizemode-4/69026123.jpg">
+						<div class="carousel-caption">
+							<h4>
+								ICC Cricket World Cup 2019: Tournament organisers happy
+							</h4>
+							<p>
+								Britain may be dealing with a national threat level of "severe" but officials are confident they have the security measures in place for a Cricket World Cup in England and Wales rated a "moderate" security risk.
+							</p>
+						</div>
+					</div>
+				</div> <a class="carousel-control-prev" href="#carousel-100353" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-100353" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header" id="home">
+						<br/>
+						<h1>
+							 <small>Top News!</small>
+						</h1>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card">
+								<img class="card-img-top" alt="Bootstrap Thumbnail First" src="data:image/jpeg;base64,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">
+								<div class="card-block">
+									<h5 class="card-title">
+										Has Narendra Modi ended dynastic politics in India?
+									</h5>
+									<p class="card-text">
+										Narendra Modi's landslide win proves that his story of a humble tea-seller who rose through the ranks of his party to become India's prime minister continues to resonate with people.
+									</p>
+									<p>
+										<a class="btn btn-primary" href="https://www.bbc.com/news/world-asia-india-48385611">Show</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="https://www.layoutit.com/img/city-q-c-600-200-1.jpg">
+								<div class="card-block">
+									<h5 class="card-title">
+										Indian forests may be able to withstand climate change better than feared
+									</h5>
+									<p class="card-text">
+										Some glad tidings from the bleak field of climate change science. New research from the Indian Institute of Technology (IIT), Kharagpur, 
+									</p>
+									<p>
+										<a class="btn btn-primary" href="https://www.cnbctv18.com/economy/indian-forests-may-be-able-to-withstand-climate-change-better-than-feared-3484371.htm">Show</a> 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card">
+								<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="https://www.layoutit.com/img/sports-q-c-600-200-1.jpg">
+								<div class="card-block">
+									<h5 class="card-title">
+										ICC Cricket World Cup 2019: MS Dhoni is captain for Virat Kohli on ground, says Suresh Raina
+									</h5>
+									<p class="card-text">
+										He's the captain of the captains. Virat feels confident when Dhoni is behind the stumps, said Suresh Raina
+									</p>
+									<p>
+										<a class="btn btn-primary" href="https://www.firstpost.com/firstcricket/sports-news/icc-cricket-world-cup-2019-ms-dhoni-is-captain-for-virat-kohli-on-ground-says-suresh-raina-6710221.html">Show</a> 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br/><br/>
+					<div class="row">
+						<div class="col-md-12">
+							<blockquote class="blockquote">
+								<p class="mb-0">
+									Today Quotes
+								</p>
+								<footer class="blockquote-footer">
+									LEARN FROM YESTERDAY ,LIVE FOR TODAY ,AND HOPE FOR TOMORROW<cite> mohit rathaur</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<blockquote class="blockquote">
+								<p class="mb-0">
+									Media Coverage
+								</p>
+								<footer class="blockquote-footer">
+									
+								</footer>
+							</blockquote>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							 <span class="badge badge-default">Label</span>
+							<div class="media">
+								<img class="mr-3" alt="Bootstrap Media Preview" src="https://bloximages.newyork1.vip.townnews.com/omaha.com/content/tncms/assets/v3/editorial/0/18/0180b66b-ca8b-554b-b156-9ad6df7b7b85/5c250b7d39bba.image.jpg?resize=300%2C208">
+								<div class="media-body">
+									<h5 class="mt-0">
+										Fitness
+									</h5>Every few months, I feel the urge to add some spice and variety to my fitness routine. The only challenge is finding affordable ways to do so.
+									<div class="media mt-3">
+										 <a class="pr-3" href="#"><img alt="Bootstrap Media Another Preview" src="https://www.layoutit.com/img/sports-q-c-64-64-2.jpg"></a>
+										<div class="media-body">
+											<h5 class="mt-0">
+												Swimming 
+											</h5> It will help to maintain our body matabolism.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<ul class="nav nav-pills">
+										<li class="nav-item">
+											 <a class="nav-link btn btn-primary" href="#">Likes <span class="badge badge-light">42</span></a>
+										</li>
+										<li class="nav-item">
+											 <a class="nav-link" href="#"> <span class="badge badge-secondary">16</span></a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<nav class="pagination-sm">
+										<ul class="pagination">
+											<li class="page-item">
+												<a class="page-link" href="#">Previous</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">1</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">2</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">3</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">4</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">5</a>
+											</li>
+											<li class="page-item">
+												<a class="page-link" href="#">Next</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h3>
+								Currency Chart.
+							</h3>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>
+											#
+										</th>
+										<th>
+											Currency
+										</th>
+										<th>
+											Low
+										</th>
+										<th>
+											High
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+										<td>
+											US $
+										</td>
+										<td>
+											149.33
+										</td>
+										<td>
+											149.66
+										</td>
+									</tr>
+									<tr class="table-active">
+										<td>
+											1
+										</td>
+										<td>
+											Euro
+										</td>
+										<td>
+											164
+										</td>
+										<td>
+											167
+										</td>
+									</tr>
+									<tr class="table-success">
+										<td>
+											2
+										</td>
+										<td>
+											AUD $
+										</td>
+										<td>
+											101
+										</td>
+										<td>
+											103
+										</td>
+									</tr>
+									<tr class="table-warning">
+										<td>
+											3
+										</td>
+										<td>
+											CAD $
+										</td>
+										<td>
+											108
+										</td>
+										<td>
+											111
+										</td>
+									</tr>
+									<tr class="table-danger">
+										<td>
+											4
+										</td>
+										<td>
+											Indian Rupee
+										</td>
+										<td>
+											1.98
+										</td>
+										<td>
+											2.10
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="page-header">
+								<h1>
+									Headlines! <small>Top 10</small>
+								</h1>
+							</div>
+							<ul>
+								<li class="list-item">
+									Press only 1st button, will get electric shock on pressing 2nd, 3rd: Chhattisgarh minister
+								</li>
+								<li class="list-item">
+									She’s fair. He’s dark. So Bareilly wife sets husband on fire
+								</li>
+								<li class="list-item">
+									Rahul Gandhi attacks Modi, says he "divided" country
+								</li>
+								<li class="list-item">
+									Modi govt made Kovind president because of his caste: Ashok Gehlot
+								</li>
+								<li class="list-item">
+									50 lakh Indian men lost jobs between 2016-18, says Azim Premji University report
+								</li>
+								<li class="list-item">
+									JeM threatens to blow up 5 Firozpur railway stations
+
+								</li>
+								<li class="list-item">
+									Mallya says he feels sorry for Jet, ready to pay even from Indian jail
+								</li>
+								<li class="list-item">
+									Are you the PM of India or Gujarat? Congress targets PM Modi over Gujarat storm tweet
+								</li>
+								</li>
+								<li class="list-item">
+									Received fake ticket from Jet Airways, Goibibo after flight cancellation, says flier
+								</li>
+								<li class="list-item">
+									Voters bribed in all TN constituencies, Supreme Court told. Asks EC for reply
+								</li>
+							</ul>
+							<nav>
+								<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="#">Previous</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">1</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">4</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">5</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#">Next</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-4">
+							<img alt="Bootstrap Image Preview" src="https://images.indianexpress.com/2019/05/ajay-devgn-father-veeru-devgan-is-no-more-celebs-tweet-condolence-759.jpg?w=310&h=175&imflag=true">
+							<dl>
+								<dt>
+									Bollywood Gossipe
+								</dt>
+								<dd>
+									Ajay Devgn’s father Veeru Devgan is no more, celebs tweet condolences
+								</dd>
+								<dt>
+									
+								</dt>
+								<dd>
+									Ajay Devgan's father Veeru Devgan passes away: Madhuri Dixit, Mahesh Bhatt, Suniel Shetty, Anupam Kher, Sham Kaushal, Abbas Mustan, Aftab Shivdasani and Siddharth among others took to Twitter to share their condolences.
+								</dd>
+								
+							</dl>
+						</div>
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-4">
+									<img alt="Bootstrap Image Preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5pYnFxqmOyn3hieVPaMtCLESivL8G7I6anlnECOHxvRHEOTA7Yw">
+								</div>
+								<div class="col-md-4">
+								</div>
+								<div class="col-md-4">
+								</div>
+							</div>
+							<dl>
+								<dt>
+									Defence 
+								</dt>
+								<dd>
+									Govt has to take concrete steps to transform forces 
+								</dd>
+								
+								<dd>
+									NEW DELHI: The new Modi-led NDA government must shed its hes concrete reforms desperately required in the defence arena,The Modi government over the last five years did take several initiatives and incremental steps but largely balked at the 
+
+
+								</dd>
+								
+							</dl>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<br/><br/>
+			<div class="row" id="contact">
+				<div class="col-md-12">
+					 
+					<address>
+						 <strong>Contact</strong><br> NH 24 AKGEC <br> Ghaziabad (201009)<br> <abbr title="Phone">P:</abbr> (05126)-256145
+					</address>
+				</div>
+			</div>
+			<div class="footer">
+				<center>
+					<small>Copyright &copy NF</small>
+				</center>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
